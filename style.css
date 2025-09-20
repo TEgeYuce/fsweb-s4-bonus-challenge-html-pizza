@@ -1,3 +1,5 @@
+/* Sayfa Geneli */
+
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -14,6 +16,21 @@
   -webkit-text-size-adjust: 100%;
 }
 
+* {
+  box-sizing: border-box;
+}
+
+html {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+
+
 a {
   font-weight: 500;
   color: #646cff;
@@ -29,12 +46,146 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  font-family: 'Barlow';
+  color: #292929;
+  background: #FAF7F2;
 }
 
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
 }
+
+h1, h2, h3 {
+  margin: 0 0 0.4rem;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 1.05;
+  font-family: "Roboto Condensed";
+  letter-spacing: 0.4px; 
+  text-transform: uppercase;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.2;
+  font-family: "Quattrocento";
+}
+
+h3 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.25;
+  font-family: "Barlow";
+}
+
+.icerik-govde {
+  width: min(1200px, 100% - 48px);
+}
+
+/* Header Kısmı */
+
+.ust-alan {
+  background: #CE2829;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+  padding: 28px 0 0;
+}
+
+.kimlik {
+  display: flex; 
+  align-items: center; 
+  gap: 10px; 
+  justify-content: center;
+}
+
+.slogan-kutu {
+  margin: 24px auto 12px; 
+  text-align: center; 
+  max-width: 760px;
+}
+
+.ince-not {
+  font-family: "Satisfy"; 
+  font-size: 22px; 
+  margin: 6px 0 8px;
+}
+
+.buyuk-baslik {
+  color:#fff;
+}
+
+.dugme {
+  display: inline-block; 
+  padding: 12px 22px; 
+  border-radius: 30px; 
+  font-weight: 700; 
+  letter-spacing: 0.4px;
+  background: #fff; 
+  color: #111; 
+  border: 0; 
+  box-shadow: 0 2px 0 opacity;
+}
+
+.dugme-kucuk {
+  padding: 10px 16px; 
+  font-weight: 600;
+}
+
+.dugme-sari {
+  background: #FDC913; 
+  color: #1d1d1d;
+}
+
+.dugme-beyaz {
+  background: #fff;
+  color: #CE2829;
+}
+
+.pizza-sahne {
+  max-width: 980px; 
+  margin: 18px auto 0;
+}
+
+.kategori-serit{
+  display: flex; 
+  gap: 18px; 
+  align-items: center; 
+  justify-content: center;
+  background: #fff; 
+  border: 1px solid #e9e9e9; 
+  border-radius: 12px;
+  padding: 12px 18px; 
+  margin: 22px 0 36px;
+}
+
+.kategori-kutu {
+  display: flex; 
+  align-items: center; 
+  gap: 12px; 
+  padding: 10px 14px;
+  border-radius: 30px; 
+  border: 1px solid transparent; 
+  background: #fff; 
+  color: #333;
+}
+
+.kategori-kutu img{ 
+  width: 24px; 
+  height: 24px;
+}
+
+.kategori-kutu.aktif {
+  background: #1e1e1e; 
+  color: #fff;
+}
+
+/* İlk Section Kısmı */
 
 #app {
   max-width: 1280px;
