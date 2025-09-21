@@ -269,6 +269,96 @@ h3 {
 
 /* İkinci Section Kısmı - Menü ve Ürünler Kısmı */
 
+.menu-alani { 
+  padding: 34px 0 48px;
+}
+
+.el-yazisi {
+  font-family: "Satisfy"; 
+  text-align: center; 
+  color: #b3554f;
+  margin-bottom: 6px; 
+  font-size: 20px;
+}
+
+.orta-baslik {
+  text-align: center;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.2;
+  font-family: "Quattrocento";
+  margin-bottom: 16px; 
+}
+
+.filtre-satiri {
+  display: flex; 
+  gap: 10px; 
+  flex-wrap: wrap; 
+  justify-content: center; 
+  margin-bottom: 18px;
+}
+
+.filtre-kapsul {
+  display: inline-flex; 
+  align-items: center; 
+  gap: 10px; 
+  border-radius: 30px;
+  padding: 10px 14px; 
+  background: #fff; 
+  border: 1px solid #ececec; 
+  color: #333;
+}
+
+.filtre-kapsul.aktif {
+  background: #1e1e1e; 
+  color: #fff;
+}
+
+.urun-katalogu {
+  display: grid; 
+  gap: 22px; 
+  grid-template-columns: repeat(3,1fr);
+}
+
+.urun-kart {
+  background: #fff; 
+  border: 1px solid #eee; 
+  border-radius: 14px; 
+  padding: 14px;
+  display: flex; 
+  flex-direction: column; 
+  gap: 10px;
+}
+
+.urun-resim {
+  width: 100%; 
+  aspect-ratio: 1/1; 
+  object-fit: contain;
+}
+
+.urun-baslik {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.25;
+  font-family: "Barlow";
+}
+
+.urun-alt {
+  display: flex; 
+  align-items: center; 
+  gap: 12px; 
+  color: #777;
+}
+
+.fiyat {
+  margin-left: auto; 
+  color: #111; 
+  font-weight: 800;
+}
+
+/* Footer Kısmı */
+
+
 
 #app {
   max-width: 1280px;
