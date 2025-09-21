@@ -358,7 +358,84 @@ h3 {
 
 /* Footer Kısmı */
 
+.alt-bolum {
+  background: #141414; 
+  color: #d8d8d8; 
+  padding: 34px 0 14px;
+}
 
+.alt-izgara {
+  display: grid; 
+  gap: 28px; 
+  grid-template-columns: 1.2fr 1fr 1fr;
+}
+
+.iletisim-liste {
+  list-style: none; 
+  margin: 12px 0 0; 
+  padding: 0; 
+  display: grid; 
+  gap: 10px;
+}
+
+.iletisim-liste img {
+  width: 18px; 
+  height: 18px; 
+  margin-right: 8px; 
+  vertical-align: -3px;
+}
+
+.iletisim-liste li {
+  display: flex; 
+  gap: 10px;
+}
+
+.alt-baslik {
+  color: #fff; 
+  margin: 6px 0 12px; 
+  font-weight: 700;
+}
+
+.mini-menu {
+  list-style: none; 
+  margin: 0; 
+  padding: 0; 
+  display: grid; 
+  gap: 8px; 
+  color: #bfbfbf;
+}
+
+.ig-izgara {
+  display: grid; 
+  grid-template-columns: repeat(3,1fr); 
+  gap: 8px;
+}
+
+.ig-izgara img {
+  width: 100%; 
+  aspect-ratio: 1/1; 
+  object-fit: cover; 
+  border-radius: 8px;
+}
+
+.alt-cubuk {
+  margin-top: 16px; 
+  padding-top: 12px; 
+  border-top: 1px solid #2a2a2a;
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
+  color: #9a9a9a; 
+  font-size: 0.9rem;
+}
+
+.tiny-ikon {
+  width: 16px; 
+  height: 16px; 
+  opacity: 0.8;
+}
+
+/* Mobil Responsive için Media Query'ler ve Breakpoint'ler */
 
 #app {
   max-width: 1280px;
