@@ -720,6 +720,75 @@ h3 {
   opacity: 0.9;
 }
 
+/* Hata Düzeltmeleri - Tasarım İyileştirmeleri 2 */
+
+/* Header */
+.ust-alan {
+  position: relative;
+  background: #fff;
+  padding: 24px 0 18px;
+  overflow: visible;
+}
+
+.ust-alan::before {
+  content: "";
+  position: absolute;
+  inset: 0 32px;
+  background: #CE2829;
+  z-index: -1;
+  border-radius: 0;
+}
+
+.ust-alan .kategori-kutu.aktif {
+  background: #fff;
+  color: #333;
+  border-color: transparent;
+}
+
+/* İlk Section */
+.kirmizi-buyuk .kampanya-resim {
+  position: absolute;
+  right: -40px;
+  bottom: -60px;
+  height: 120%;
+  max-height: none;
+  object-fit: contain;
+}
+
+.koyu-kutu {
+  padding-right: 230px;
+}
+
+.koyu-kutu .kampanya-resim {
+  right: 14px;
+  bottom: -8px;
+  max-height: 175px;
+}
+
+/* İkinci Section */
+.urun-alt .puan { 
+  order: 1;
+}
+.urun-alt .adet {
+  order: 2;
+  margin-left: auto;
+  margin-right: 40px;
+}
+
+.urun-alt .fiyat { 
+  order: 3;
+}
+
+/* Footer */
+
+.tiny-ikon {
+  width: 28px;
+  height: 28px;
+  opacity: 0.9;
+}
+
+
+
 #app {
   max-width: 1280px;
   margin: 0 auto;
