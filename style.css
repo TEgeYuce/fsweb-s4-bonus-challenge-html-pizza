@@ -48,7 +48,7 @@ body {
   min-height: 100vh;
   font-family: 'Barlow';
   color: #292929;
-  background: #FAF7F2;
+  background: #fff;
 }
 
 h1 {
@@ -185,7 +185,90 @@ h3 {
   color: #fff;
 }
 
-/* İlk Section Kısmı */
+/* İlk Section Kısmı - Kampanya Alanı */
+
+.kampanya-alani 
+{
+  background: #FAF7F2;
+  padding: 28px 0;
+}
+
+.promos-desen {
+  display: grid; 
+  gap: 18px; 
+  grid-template-columns: 2fr 1fr; 
+  grid-auto-rows: 180px;
+}
+
+.kampanya-kutu {
+  position: relative; 
+  border-radius: 18px; 
+  overflow: hidden; 
+  padding: 20px; 
+  isolation: isolate;
+  display: flex; 
+  align-items: center;
+}
+
+.kampanya-icerik {
+  z-index: 1;
+  color: #fff;
+}
+
+.kampanya-baslik {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1;
+  font-family: "Quattrocento"; 
+  margin-bottom: 8px;
+}
+
+.kampanya-alt {
+  opacity: 0.95; 
+  margin: 6px 0 14px;
+}
+
+.kucuk-baslik {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 1.2;;
+  font-family: "Barlow";
+  margin-bottom: 14px;
+}
+
+.uzatma {
+  letter-spacing: 0.6px;
+}
+
+.kampanya-resim{
+  position: absolute; 
+  right: 10px; 
+  bottom: -4px; 
+  max-height: 170px; 
+  object-fit: contain;
+}
+
+.kirmizi-buyuk {
+  background: #D83A3B; 
+  grid-row: 1 / span 2;
+}
+
+.koyu-kutu { 
+  background: #1f1f1f;
+}
+
+.bej-kutu {
+  background:#EFE7DA; 
+  color:#2e2a21;
+}
+
+.bej-kutu .kampanya-icerik {
+  color: #2e2a21;
+}
+
+
+/* İkinci Section Kısmı - Menü ve Ürünler Kısmı */
+
 
 #app {
   max-width: 1280px;
