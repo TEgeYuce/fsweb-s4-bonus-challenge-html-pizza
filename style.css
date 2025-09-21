@@ -29,6 +29,20 @@ img {
   display: block;
 }
 
+/* Hata Düzeltmeleri - Tasarım İyileştirmeleri */
+/* 
+Sayfa üzerindeki bileşenler başlangıçta yan yana görünüyordu, alt alta görünmesi için aşağıdaki
+kodları ekledim.
+*/
+body {
+  display: block !important;
+  margin: 0;
+}
+
+header, section, footer { 
+  display: block; 
+  width: 100%;
+}
 
 
 a {
@@ -467,6 +481,243 @@ h3 {
   .urun-katalogu {
     grid-template-columns: 1fr;
   }
+}
+
+/* Hata Düzeltmeleri - Tasarım İyileştirmeleri */
+
+/* Header */
+.ust-alan {
+  background: #CE2829;
+  color: #fff;
+  padding: 24px 0 18px;
+  overflow: hidden;
+}
+
+.ust-alan .icerik-govde {
+  width: min(1120px, 100% - 80px);
+  margin-inline: auto;
+}
+
+.ince-not { 
+  color: #FDC913;
+  font-family: "Satisfy";
+  font-size: 22px;
+  margin: 6px 0 10px;
+}
+
+.slogan-kutu {
+  max-width: 700px;
+  margin: 14px auto 6px;
+  text-align: center;
+}
+
+.pizza-sahne { 
+  max-width: 960px; 
+  margin: 16px auto 0; 
+}
+
+.pizza-sahne img { 
+  width: 100%; 
+  filter: drop-shadow(0 18px 40px opacity); 
+}
+
+.kategori-serit {
+  display: flex; 
+  align-items: center; 
+  justify-content: center;
+  gap: 16px; 
+  padding: 14px 18px; 
+  margin: 22px auto 0;
+  background: #fff; 
+  border: 1px solid #ececec; 
+  border-radius: 16px; 
+  box-shadow: 0 6px 16px opacity;
+  width: min(980px, 100% - 40px);
+}
+
+.kategori-kutu { 
+  padding: 10px 16px; 
+  border-radius: 30px; 
+  gap: 10px; 
+  font-weight: 600;
+}
+
+.kategori-kutu img{ 
+  width: 24px; height: 24px;
+}
+
+.kategori-kutu.aktif { 
+  background: #1E1E1E; 
+  color: #fff;
+}
+
+/* İlk Section */
+.kampanya-alani { 
+  background: #FAF7F2; 
+  padding: 28px 0;
+}
+.kampanya-alani .icerik-govde { 
+  width: min(1120px, 100% - 80px); 
+  margin-inline: auto;
+}
+
+.promos-desen {
+  display: grid; 
+  gap: 18px;
+  grid-template-columns: 1.6fr 1fr;
+  grid-auto-rows: 180px;
+}
+
+.kampanya-kutu {
+  position: relative; 
+  border-radius: 18px; 
+  overflow: hidden;
+  padding: 22px; 
+  display: flex; 
+  align-items: center;
+}
+
+.kampanya-icerik { 
+  z-index: 1; 
+  max-width: 60ch; 
+}
+
+.kirmizi-buyuk {
+  background: #D83A3B; color: #fff;
+  grid-row: 1 / span 2;
+  min-height: 380px;
+}
+
+.kampanya-baslik {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1;
+  font-family: "Quattrocento";
+  margin-bottom: 10px;
+}
+
+.kampanya-alt { 
+  margin: 6px 0 16px; 
+  opacity: 0.95;
+}
+
+.kirmizi-buyuk .kampanya-resim {
+  position: absolute; 
+  right: 14px; 
+  bottom: -10px;
+  max-height: 220px;
+  object-fit: contain;
+}
+
+.koyu-kutu{ 
+  background: #1f1f1f; 
+  color: #fff;
+}
+
+.koyu-kutu .kampanya-icerik { 
+  max-width: 24rem;
+}
+
+.koyu-kutu .kampanya-resim { 
+  right: 14px; 
+  bottom: -8px; 
+  max-height: 175px;
+}
+
+.bej-kutu{ 
+  background: #EFE7DA; 
+  color: #2e2a21; 
+}
+
+.bej-kutu .kampanya-resim { 
+  right: 12px; 
+  bottom: -6px; 
+  max-height: 170px; 
+}
+
+.uzatma { 
+  color: #D83A3B; 
+  letter-spacing: 0.4px;
+}
+
+.dugme { 
+  padding: 10px 18px; 
+  border-radius: 30px; 
+  font-weight: 700;
+}
+
+.dugme-kucuk { 
+  padding: 9px 14px;
+}
+
+/* İkinci Section */
+
+.menu-alani .icerik-govde { 
+  width: min(1120px, 100% - 80px); 
+  margin-inline: auto;
+}
+
+.el-yazisi { 
+  color: #C94B42; 
+  font-size: 20px; 
+  margin-bottom: 6px;
+}
+
+.urun-alt {
+  display: flex; 
+  align-items: center; 
+  gap: 12px; 
+  color: #777;
+}
+
+.urun-alt .puan { 
+  order: 1;
+}
+.urun-alt .adet { 
+  order: 2; 
+  margin-left: auto; 
+  margin-right: 12px;
+}
+.urun-alt .fiyat { 
+  order:3 ;
+}
+
+/* Footer */
+.alt-bolum { 
+  background: #141414; 
+  color: #d8d8d8; 
+  padding: 34px 0 14px;
+}
+.alt-bolum .icerik-govde { 
+  width: min(1120px, 100% - 80px);
+  margin-inline: auto;
+}
+
+.alt-izgara { 
+  display: grid; 
+  gap: 28px; 
+  grid-template-columns: 1.2fr 1fr 1fr;
+}
+
+.buyuk-logo { 
+  display: block; 
+  height: 72px;
+}
+
+.alt-cubuk {
+  margin-top: 16px; 
+  padding-top: 12px; 
+  border-top: 1px solid #2a2a2a;
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
+  color: #9a9a9a;
+}
+
+.tiny-ikon { 
+  width: 24px; 
+  height: 24px; 
+  opacity: 0.9;
 }
 
 #app {
