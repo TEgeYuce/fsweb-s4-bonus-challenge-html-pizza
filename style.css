@@ -900,7 +900,77 @@ h3 {
   filter: drop-shadow(0 18px 40px opacity);
 }
 
+/* Hata Düzeltmeleri - Tasarım İyileştirmeleri 5 */
 
+/* Header */
+.pizza-sahne {
+  margin-top: 0;
+  position: relative;
+  z-index: 1;
+}
+
+.slogan-kutu {
+  position: relative;
+  z-index: 2;
+  margin-bottom: clamp(-40px, -5vw, -90px);
+}
+
+.ust-alan .icerik-govde { 
+  overflow: visible;
+}
+
+.pizza-sahne {
+  display: block;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.kategori-alani {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.ust-alan .icerik-govde {
+  padding-bottom: 0 !important;
+  overflow: visible;
+}
+
+.pizza-sahne {
+  margin-bottom: -8px;
+  position: relative;
+  z-index: 3;
+}
+
+.kategori-serit {
+  margin-top: -14px;
+  padding-top: 0;
+  position: relative;
+  z-index: 4;
+}
+
+.pizza-sahne {
+  position: relative;
+  background: #CE2829;
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 0;
+  overflow: visible;
+}
+
+.slogan-kutu {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+  margin-bottom: -40px;
+}
+
+.pizza-sahne img {
+  display: block;
+  width: 100%;
+  height: auto;
+  position: relative;
+  z-index: 1;
+}
 
 #app {
   max-width: 1280px;
